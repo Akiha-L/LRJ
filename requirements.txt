@@ -5,3 +5,6 @@ numpy
 scikit-image
 pandas
 scikit-learn
+seaborn
+matplotlib
+sympy
