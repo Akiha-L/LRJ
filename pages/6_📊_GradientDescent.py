@@ -105,7 +105,7 @@ with bigcol1:
 with bigcol2:
 
     w = GD(w_start, epochs, lr=lr) 
-    print('w的變化軌跡：', np.around(w, 2))
+    print('w：', np.around(w, 2))
     
     # 設定中文字型
     plt.rcParams['font.sans-serif'] = ['Microsoft JhengHei']  
@@ -119,9 +119,9 @@ with bigcol2:
     plt.plot(w, [f(z) for z in w], label='lr={}'.format(lr))    
     plt.scatter(w, [f(z) for z in w], c=color, ) 
     
-    plt.title('梯度下降法', fontsize=20)
+    plt.title('Gradient Descent', fontsize=20)
     plt.xlabel('W', fontsize=20)
-    plt.ylabel('損失函數', fontsize=20)
+    plt.ylabel('Loss Function', fontsize=20)
     plt.show()
     
     st.pyplot(plt.gcf()) # instead of plt.show()
