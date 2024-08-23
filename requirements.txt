@@ -12,5 +12,4 @@ yfinance
 mplfinance
 datetime
 requests
-io
 
