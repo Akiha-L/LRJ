@@ -8,3 +8,5 @@ scikit-learn
 seaborn
 matplotlib
 sympy
+yfinance
+mplfinance
