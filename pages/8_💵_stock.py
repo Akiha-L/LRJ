@@ -98,8 +98,7 @@ if status=="Success":
                              index=None,
                              placeholder="台積電")
         
-        if st.button("顯示"):
-            st.write(df[df[sel]==num])
+        st.write(df[df[sel]==num])
     
     
     
