@@ -111,50 +111,6 @@ if status=="Success":
         df.to_csv("./stock/每日收盤行情_"+date1+".csv", index=False)
 
 
-st.markdown(line)
-
-# 畫K線
-
-line="""
----
-"""
-
-st.title("K-line Maker")
-
-st.markdown(line)
-
-cola1, cola2 =st.columns(2)
-
-with cola1:
-    # 取得日期
-    date_s = st.date_input("Start: ", datetime.date(2023, 8, 22))
-    date_e = st.date_input("End: ", datetime.date(2024, 8, 23))
-
-    # 取得股票代號
-    stock_inp=st.selectbox("證券代號: ",df["證券代號"],index=None,placeholder="2330")
-    stock_name=str(stock_inp)+".TW"
-    
-    # 選擇時間
-    day0 = ["週","雙週","月","季","半年","年"]
-    day1 = [5,10,20,60,120,240]
-
-    ran = st.selectbox("觀察時間",day0)
-
-    day= 0-day1[day0.index(ran)]
-
-with cola2:
-    # 取得歷史股價
-    df = yt.download(stock_name, start=str(date_s), end=str(date_e))
-        
-    # 畫箱型圖
-    st.write("K線")
-    
-    mc = mpf.make_marketcolors(up='g',down='r')
-    s  = mpf.make_mpf_style(marketcolors=mc)
-    plot2=mpf.plot(df[day:], type='candle', style=s)
-    st.pyplot(plot2)
-
-
 
 
 

@@ -18,6 +18,8 @@ data_url_4 = get_image_html("乳癌預測", "./pic/cancer.png")
 data_url_5 = get_image_html("方程式", "./pic/math.png")
 data_url_6 = get_image_html("梯度下降", "./pic/GD.png")
 data_url_7 = get_image_html("資料處理", "./pic/EDA.png")
+data_url_8 = get_image_html("每日收盤", "./pic/stock.png")
+data_url_9 = get_image_html("Kline", "./pic/kline.png")
 
 st.set_page_config(
     page_title="Streamlit Program List ",
@@ -149,24 +151,33 @@ with colc1:
     st.markdown(data_url_7, unsafe_allow_html=True)
     
 with colc2:
-    st.markdown('### [Future works]()')
+    st.markdown('### [每日收盤行情](stock)')
     st.markdown('''
-    ##### 
-        - 
-    ##### 
-        - 
+    ##### 功能
+        - 收集指定日期之收盤行情
+        - 可尋找單支股票之收盤行情
+        - 計算漲跌幅
+    ##### 資料來源
+        - 台灣證券交易所
         ''')
-    #st.markdown(data_url_7, unsafe_allow_html=True)
+    st.markdown(data_url_8, unsafe_allow_html=True)
 
 with colc3:
-    st.markdown('### [Future works]()')
+    st.markdown('### [K-line 產生器](Kline)')
     st.markdown('''
-    ##### 
-        - 
-    ##### 
-        - 
+    ##### 這是什麼
+        - K線(Candlestick chart)，又稱陰陽燭、蠟
+        燭線，是反映價格走勢的一種圖線，其特色在於將
+        一段時間內標的價格走勢做濃縮整理，並用不同的
+        顏色和形態來透露價格訊息及市場情緒，以便投資
+        者進行分析
+
+    ##### 特色
+        - 自動畫 K線
+        - 可選擇時間區間
+        - 可選擇不同股票
         ''')
-    #st.markdown(data_url_7, unsafe_allow_html=True)
+    st.markdown(data_url_9, unsafe_allow_html=True)
         
         
         
