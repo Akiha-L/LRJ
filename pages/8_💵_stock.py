@@ -12,10 +12,8 @@ import datetime
 import requests
 from io import StringIO
 import pandas as pd
-import yfinance as yt
-import mplfinance as mpf
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 line="""
 ---

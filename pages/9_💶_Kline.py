@@ -11,7 +11,7 @@ import datetime
 import yfinance as yt
 import mplfinance as mpf
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 line="""
 ---
