@@ -5,15 +5,6 @@ import joblib
 import pandas as pd
 import numpy as np
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC, LinearSVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import Perceptron
-from sklearn.linear_model import SGDClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.preprocessing import OneHotEncoder
 
 # 顯示網頁畫面
 
@@ -148,9 +139,7 @@ RF = joblib.load('./space/models/RF.joblib')
 cata = ["Fail","Success"]
 
 with col4:
-    
     if st.button('預測'):
-        X_new = [S_test]
         
         st.write("SVC 的預測結果是：",cata[int(SVC.predict(S_test))])
         st.write("DT  的預測結果是：",cata[int(DT.predict(S_test))])
