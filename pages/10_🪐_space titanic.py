@@ -24,16 +24,15 @@ with col1:
     
     data[12]=st.text_area("Name","John Wick")
     
-    st.write("PassengerId")
     cola1, cola2 = st.columns(2)
     with cola1:        
-        IDa=st.selectbox("group",list(range(1,10000)))
+        IDa=st.selectbox("group",list(range(1,10000)),index=2024)
     with cola2:
-        IDb=st.selectbox("number",list(range(1,5)))
+        IDb=st.selectbox("number",list(range(1,5)),index=1)
     st.write("PassengerId is: "+str(IDa)+str("_")+str(IDb))
     data[0]=str(IDa)+str("_")+str(IDb)
     
-    data[5]=st.selectbox("Age",list(range(80)))
+    data[5]=st.selectbox("Age",list(range(80)),index=40)
     
     
 with col2:
@@ -49,8 +48,8 @@ with col2:
     side_list=["P","S"]
     data[2]=st.checkbox("CryoSleep")
     st.write("Cabin")
-    Cd=st.selectbox("Deck",deck_list)
-    Cn=st.selectbox("Num",list(range(1000)))
+    Cd=st.selectbox("Deck",deck_list,index=3)
+    Cn=st.selectbox("Num",list(range(1000)),index=350)
     Cs=st.selectbox("Side",side_list)
     st.write("Cabin is: "+str(Cd)+str("/")+str(Cn)+str("/")+str(Cs))
     data[3]=str(Cd)+str("/")+str(Cn)+str("/")+str(Cs)
