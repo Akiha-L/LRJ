@@ -6,7 +6,7 @@ numpy
 pandas
 requests
 scikit-image
-scikit-learn
+scikit-learn==1.2.2
 seaborn
 streamlit
 streamlit-drawable-canvas
