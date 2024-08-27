@@ -25,12 +25,10 @@ with col1:
     data[12]=st.text_area("Name","John Wick")
     
     st.write("PassengerId")
-    cola1, cola2 ,cola3 = st.columns(3)
+    cola1, cola2 = st.columns(2)
     with cola1:        
         IDa=st.selectbox("group",list(range(1,10000)))
     with cola2:
-        st.write("-")
-    with cola3:
         IDb=st.selectbox("number",list(range(1,5)))
     st.write("PassengerId is: "+str(IDa)+str("_")+str(IDb))
     data[0]=str(IDa)+str("_")+str(IDb)
