@@ -8,7 +8,7 @@ requests
 scikit-image
 scikit-learn>=1.2.2
 seaborn
-streamlit
+streamlit==1.36
 streamlit-drawable-canvas
 sympy
 tensorflow-cpu
