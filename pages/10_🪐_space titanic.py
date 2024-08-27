@@ -18,15 +18,20 @@ data=[0]*13
 
 st.title("請輸入旅客資料，並進行預測")
 
-col1, col2 ,col3,col4 = st.columns(4)
+col1, col2 ,col3, col4 = st.columns(4)
 with col1:
     st.write("旅客基本資料")
     
     data[12]=st.text_area("Name","John Wick")
     
     st.write("PassengerId")
-    IDa=st.selectbox("group",list(range(1,10000)))
-    IDb=st.selectbox("number",list(range(1,5)))
+    cola1, cola2 ,cola3 = st.columns(3)
+    with cola1:        
+        IDa=st.selectbox("group",list(range(1,10000)))
+    with cola2:
+        st.write("-")
+    with cola3:
+        IDb=st.selectbox("number",list(range(1,5)))
     st.write("PassengerId is: "+str(IDa)+str("_")+str(IDb))
     data[0]=str(IDa)+str("_")+str(IDb)
     
