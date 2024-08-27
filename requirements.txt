@@ -6,9 +6,9 @@ numpy
 pandas
 requests
 scikit-image
-scikit-learn>=1.2.2
+scikit-learn ==1.5.1
 seaborn
-streamlit==1.36
+streamlit
 streamlit-drawable-canvas
 sympy
 tensorflow-cpu
