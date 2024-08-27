@@ -4,7 +4,6 @@ streamlit-drawable-canvas
 numpy
 scikit-image
 scikit-learn
-sklearn
 pandas
 seaborn
 matplotlib
