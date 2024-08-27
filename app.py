@@ -20,6 +20,7 @@ data_url_6 = get_image_html("梯度下降", "./pic/GD.png")
 data_url_7 = get_image_html("資料處理", "./pic/EDA.png")
 data_url_8 = get_image_html("每日收盤", "./pic/stock.png")
 data_url_9 = get_image_html("Kline", "./pic/kline.png")
+data_url_10 = get_image_html("Space", "./pic/space.png")
 
 st.set_page_config(
     page_title="Streamlit Program List ",
@@ -35,7 +36,7 @@ st.title('Machine Learning 學習歷程(HW)')
 st.markdown(line)
 cola1, cola2, cola3 = st.columns(3)
 with cola1:
-    st.markdown('### [(分類)企鵝品種辨識](分類)')
+    st.markdown('### (分類)企鵝品種辨識')
     st.markdown('''
     ##### 特徵(X):
         - 島嶼
@@ -51,7 +52,7 @@ with cola1:
         ''')
     st.markdown(data_url_1, unsafe_allow_html=True)
 with cola2:
-    st.markdown('### [(迴歸)計程車小費預測](迴歸)')
+    st.markdown('### (迴歸)計程車小費預測')
     st.markdown('''
     ##### 特徵(X):
         - 車費
@@ -66,7 +67,7 @@ with cola2:
     st.markdown(data_url_2, unsafe_allow_html=True)
     
 with cola3:
-    st.markdown('### [字母辨識 EMNIST](emnist)')
+    st.markdown('### 字母辨識 EMNIST')
     st.markdown('''
     ##### 特色
         - 26個英文字母
@@ -85,7 +86,7 @@ st.markdown(line)
 
 colb1, colb2, colb3 = st.columns(3)
 with colb1:
-    st.markdown('### [(分類)乳癌預測 Breast Cancer](cancer)')
+    st.markdown('### (分類)乳癌預測 Breast Cancer')
     st.markdown('''
     ##### 特徵(X)
         - radius_mean
@@ -100,7 +101,7 @@ with colb1:
     st.markdown(data_url_4, unsafe_allow_html=True)
     
 with colb2:
-    st.markdown('### [聯立方程式求解](equsolve)')
+    st.markdown('### 聯立方程式求解')
     st.markdown('''
     ##### 特色:
         - 可自行輸入1~6組方程式
@@ -112,7 +113,7 @@ with colb2:
     st.markdown(data_url_5, unsafe_allow_html=True)
 
 with colb3:
-    st.markdown('### [梯度下降法(Gradient Descent)](GradientDescent)')
+    st.markdown('### 梯度下降法(Gradient Descent)')
     st.markdown('''
     ##### 這是什麼?
         - 梯度下降法(Gradient descent)是一種一階最佳
@@ -133,7 +134,7 @@ st.markdown(line)
 colc1, colc2, colc3 = st.columns(3)
 
 with colc1:
-    st.markdown('### [探索式資料分析 EDA ](EDA)')
+    st.markdown('### 探索式資料分析 EDA')
     st.markdown('''
     ##### 這是什麼?
         - 探索式資料分析EDA
@@ -151,7 +152,7 @@ with colc1:
     st.markdown(data_url_7, unsafe_allow_html=True)
     
 with colc2:
-    st.markdown('### [每日收盤行情](stock)')
+    st.markdown('### 每日收盤行情')
     st.markdown('''
     ##### 功能
         - 收集指定日期之收盤行情
@@ -163,7 +164,7 @@ with colc2:
     st.markdown(data_url_8, unsafe_allow_html=True)
 
 with colc3:
-    st.markdown('### [K-line 產生器](Kline)')
+    st.markdown('### K-line 產生器')
     st.markdown('''
     ##### 這是什麼
         - K線(Candlestick chart)，又稱陰陽燭、蠟
@@ -179,8 +180,27 @@ with colc3:
         ''')
     st.markdown(data_url_9, unsafe_allow_html=True)
         
-        
-        
+
+st.markdown(line)  
+cold1, cold2, cold3 = st.columns(3)
+
+with cold1:
+    st.markdown('### Space Titanic')
+    st.markdown('''
+    ##### 特徵(X)
+        - HomePlanet
+        - CryoSleep
+        - Destination
+        - RoomService
+        - ShoppingMall
+        - etc.
+    ##### 傳送結果 (Transported)
+        - 成功 Success
+        - 失敗 Fail
+        ''')
+    st.markdown(data_url_10, unsafe_allow_html=True) 
+
+
         
         
         
