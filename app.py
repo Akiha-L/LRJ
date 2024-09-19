@@ -21,6 +21,7 @@ data_url_7 = get_image_html("資料處理", "./pic/EDA.png")
 data_url_8 = get_image_html("每日收盤", "./pic/stock.png")
 data_url_9 = get_image_html("Kline", "./pic/kline.png")
 data_url_10 = get_image_html("Space", "./pic/space.png")
+data_url_11 = get_image_html("titanic", "./pic/titanic.png")
 
 st.set_page_config(
     page_title="Streamlit Program List ",
@@ -199,6 +200,23 @@ with cold1:
         - 失敗 Fail
         ''')
     st.markdown(data_url_10, unsafe_allow_html=True) 
+
+
+with cold2:
+    st.markdown('### Titanic')
+    st.markdown('''
+    ##### 經過挑選，找出最佳模型
+        - Gradient Boosting Classifier
+        - Logistic Regression
+        - Nearest Neighbors
+        - Decision Tree
+        - Random Forest
+        - Naive Bayes
+    ##### 生存與否 (Survived)
+        - 成功 Success
+        - 失敗 Fail
+        ''')
+    st.markdown(data_url_11, unsafe_allow_html=True) 
 
 
         
